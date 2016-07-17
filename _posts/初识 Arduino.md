@@ -5,6 +5,7 @@ tags: Arduino
 ---
 ## [介绍](http://baike.baidu.com/link?url=F8-iGnUjNpmRYoHfg4PRL8fcIYyopRFtrGSHrL5hfmV1E5gDMpBBANRfAFYkqle8IZKaIESvEWktTmO7lSGnz_)
 [官网](https://www.arduino.cc/)
+<!--more-->
 ## 型号
 * Arduino Uno
 * Arduino Nano
