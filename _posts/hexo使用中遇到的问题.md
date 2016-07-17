@@ -8,3 +8,4 @@ tags: hexo
 
 [在 HEXO 中优雅的使用本地图片](https://codefalling.com/2015/12/19/no-pains-with-hexo-local-image/?utm_source=tuicool&utm_medium=referral)
 <!--more-->
+[ Hexo添加RSS和评论插件](http://blog.csdn.net/czfbxcg/article/details/50939999)
