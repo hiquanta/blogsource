@@ -1,7 +1,7 @@
 ---
 title: Android自定义view之---颜色
 date: 2016-07-20 16:15:36
-tags:
+tags: Android
 ---
 # 颜色
 
