@@ -5,7 +5,7 @@ tags: Android
 ---
 ## View的坐标获取方法（红色线代表View方法的返回值含义)：
 * getTop()：获取view自身顶边到父布局顶边的距离
-
+<!--more-->
 * getBottom():获取View自身底边到父布局顶边的距离
 
 * getLeft()：获取View自身左边到父布局左边的距离
@@ -149,10 +149,30 @@ Rect rect = new Rect();
 getWindow().getDecorView().getWindowVisibleDisplayFrame(rect);
 ```
 ### 获取状态栏高度
+在oncreate中获取为0，需要放到onWindowFocusChanged去执行才行
 ```java
 Rect rect= new Rect();
 getWindow().getDecorView().getWindowVisibleDisplayFrame(rect);
-int statusBarHeight = rectangle.top;
+int statusBarHeight = rect.top;
+```
+另一种获取状态栏的方式
+```java
+Class<?> c = null;
+      Object obj = null;
+      Field field = null;
+      int x = 0, sbar = 0;
+      try {
+          c = Class.forName("com.android.internal.R$dimen");
+          obj = c.newInstance();
+          field = c.getField("status_bar_height");
+          x = Integer.parseInt(field.get(obj).toString());
+          sbar = getResources().getDimensionPixelSize(x);
+          Log.e("状态栏的高度：",sbar+"");
+      } catch(Exception e1) {
+          Log.e("getStateBarHight","get status bar height fail");
+          e1.printStackTrace();
+      }
+
 ```
 ### View布局区域宽高等尺寸获取
 ```java
@@ -217,3 +237,4 @@ scrollTo()和scrollBy()方法特别注意：如果你给一个ViewGroup调用scr
 [Android 屏幕（View）坐标系统](http://blog.csdn.net/wangjinyu501/article/details/21827341)
 
 [安卓自定义View基础：坐标系](http://android.jobbole.com/83276/)
+[android 状态栏、标题栏、屏幕高度](http://xqjay19910131-yahoo-cn.iteye.com/blog/1435249)
