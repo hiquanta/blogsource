@@ -56,7 +56,11 @@ return consume;
  * 然后,有选择地实现OnGestureListener和OnDoubleTapListener中的方法:onSingleTapUp(单击),onFling(快速滑动),onScroll(拖动),onLongPress(长按)和onDoubleTap(双击).
  用于手势检测,检测用户的点击、滑动、长按、双击等行为。
 
+
+
 如果只是监听滑动相关的,在onTouchEvent中实现,如果要监听双击这种行为的话,那么就使用GestureDetector.
+
+[测试代码](https://github.com/hiquanta/masterandroid)
 
 3. Scroller
  弹性滑动对象，用于实现View的弹性滑动
@@ -67,4 +71,9 @@ return consume;
 
 ## 相关文章
 [手势事件：滑动动速度跟踪类VelocityTracker介绍](http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2012/1117/574.html)
+
 [Android View系列一: View基础知识](http://blog.csdn.net/fang323619/article/details/51367158)
+
+[ 用户手势检测-GestureDetector使用详解](http://blog.csdn.net/harvic880925/article/details/39520901)
+
+[ Android中滑屏初探 ---- scrollTo 以及 scrollBy方法使用说明](http://blog.csdn.net/qinjuning/article/details/7247126)
