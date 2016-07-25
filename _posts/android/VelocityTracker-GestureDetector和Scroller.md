@@ -64,8 +64,25 @@ return consume;
 
 3. Scroller
  弹性滑动对象，用于实现View的弹性滑动
-
-
+## 使用方法
+```java
+Scroller scroller=new Scroller(mContext);
+//缓慢滑动到指定位置
+private void smoothScrollTo(int destX,int destY){
+    int scrollX=getScrollX();
+    int delta=destX-scrollX;
+    //1000ms内滑向destX,效果就是慢慢滑动
+    mScroller.startScroll(scrollX,0,delta,0,1000);
+    invalidate();
+}
+@Override
+public void computeScroll(){
+    if(mScroller.computeScrollOffset()){
+    scrollTo(mScroller.getCurrX(),mScroller.getCurrY());
+    postInvalidate();
+    }
+}
+```
 
 
 
