@@ -77,3 +77,4 @@ return consume;
 [ 用户手势检测-GestureDetector使用详解](http://blog.csdn.net/harvic880925/article/details/39520901)
 
 [ Android中滑屏初探 ---- scrollTo 以及 scrollBy方法使用说明](http://blog.csdn.net/qinjuning/article/details/7247126)
+[ Android中滑屏实现----手把手教你如何实现触摸滑屏以及Scroller类详解](http://blog.csdn.net/qinjuning/article/details/7419207)
