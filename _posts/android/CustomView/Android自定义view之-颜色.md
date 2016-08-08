@@ -9,7 +9,7 @@ tags: Android
 ### [【本系列相关文章】](https://github.com/GcsSloop/AndroidNote/tree/master/CustomView)
 
 简要介绍安卓中的颜色相关内容，包括颜色的定义，创建颜色的几种方式，以及颜色的混合模式等。
-
+<!--more-->
 ## 一.简单介绍颜色
 
 安卓支持的颜色模式：
